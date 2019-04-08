@@ -1,0 +1,4 @@
+# general ignores
+node_modules
+dist
+.vs

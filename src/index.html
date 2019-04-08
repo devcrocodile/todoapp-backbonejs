@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Backbone</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta charset="utf-8">
+  </head>
+  <body>  
+
+
+    <section id="todoapp">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <h3><span class="glyphicon glyphicon-list"></span> Todo</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <input id="new-todo" class="form-control input-lg" placeholder="Todo text"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 text-right form-group">
+                <button type="button" id="btn-delete-list" class="btn btn-danger">
+                  <span class="fa fa-trash"></span> Delete list
+                </button>
+                <button type="button" id="btn-new-todo" class="btn btn-success">
+                  <span class="glyphicon glyphicon-plus"></span> Add
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+              <ul id="todo-list">
+                <li><em><i class="fa fa-pencil"></i> Add a Todo...</em></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+      <!-- backbone views -->
+      <script type="text/template" id="item-template">
+        <div data-id="<%- viewid %>">
+          <%- title %> <%- viewid %>
+        </div>
+      </script>
+
+  </body>
+</html>
