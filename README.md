@@ -12,3 +12,5 @@ Simple Todo App in BackboneJS using webpack, backbone, jquery, bootstrap3, less 
 1. Just build, `npm run build`
 2. Build and server `npm run prod`
 3. Open [http://localhost:8040](http://localhost:8040)
+
+Thats it!
